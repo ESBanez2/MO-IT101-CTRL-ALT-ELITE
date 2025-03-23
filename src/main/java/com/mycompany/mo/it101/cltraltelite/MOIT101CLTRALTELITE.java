@@ -157,7 +157,7 @@ public class MOIT101CLTRALTELITE {
         System.out.println("Total Work Hours: " + totalWorkHoursOnSpecificDate);
         System.out.println("Hourly Rate: PHP " + hourlyRate);
         System.out.println("Salary for " + specificDate + ": PHP " + salaryForSpecificDate);
-        System.out.println("===================================");
+        System.out.println("===================================================================");
 
         return salaryForSpecificDate;
     }
@@ -400,7 +400,8 @@ public class MOIT101CLTRALTELITE {
         System.out.printf("Deductions\t\t₱%.2f\n", totalDeductions);
         System.out.printf("TAKE HOME PAY\t\t₱%.2f\n", netSalary);
         
-        
+        System.out.printf("================================\n");
+
         
         
         return netSalary;
@@ -558,6 +559,8 @@ public class MOIT101CLTRALTELITE {
                     double netSalary = computeMonthlySalary(empID, monthYear);
                     if (netSalary > 0) {
                         System.out.printf("\n✅ Payslip generated for Employee No. %s for %s%n", empID, monthYear);
+                       System.out.printf("================================================================\n");
+
                     }
                     break;
 
